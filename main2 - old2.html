@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+            <div class="col-lg-12">
+                <div class="card px-3">
+                    <div class="card-body">
+                        <h4 class="card-title">Awesome Todo list</h4>
+                        <div class="add-items d-flex"> <input type="text" class="form-control todo-list-input" placeholder="What do you need to do today?"> <button class="add btn btn-primary font-weight-bold todo-list-add-btn">Add</button> </div>
+                        <div class="list-wrapper">
+                            <ul class="d-flex flex-column-reverse todo-list">
+                                <li>
+                                    <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox"> For what reason would it be advisable. <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
+                                </li>
+                                <li class="completed">
+                                    <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox" checked=""> For what reason would it be advisable for me to think. <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
+                                </li>
+                                <li>
+                                    <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox"> it be advisable for me to think about business content? <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
+                                </li>
+                                <li>
+                                    <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox"> Print Statements all <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
+                                </li>
+                                <li class="completed">
+                                    <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox" checked=""> Call Rampbo <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
+                                </li>
+                                <li>
+                                    <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox"> Print bills <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+	<div class="jumbotron" style="background-color:#CFD8DC;">
+		<div class="container">
+			<div class="row">
+				<header class="col-md-12">
+					<h1 class="h2">Task List</h1>
+					<h2 class="h3">Input all tasks which come to your mind</h2>
+					<a class="btn btn-primary btn-lg" href="main2.html" role="button">+ (to add a task)</a>
+				</header>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+		<!--div class="input-group mb-3"-->
+  			<input type="text" class="form-control" placeholder="task" aria-label="task" aria-describedby="basic-addon2">
+  		</div>
+  		<div class="col-md-2">
+  			<div class="input-group-append">
+    			<button class="btn btn-success" type="button">OK</button>
+  			</div>
+	</div>
+		<!--/div-->
+	</div>
+	</div>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="webapp.html">
+            <img src="imgs/logo.png" class="img-responsive">
+          </a>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- modal launch button -->
+          <button id="tweet" class="btn btn-default pull-right visible-xs-block" data-toggle="modal" data-target="#tweet-modal">
+            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+            Tweet
+          </button>
+        </div>
+
+        <div id="nav-menu" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="badge">5</span>
+                <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                Notifications
+              </a>
+            </li>
+            <li>
+              <a href="#" role="button" data-toggle="modal" data-target="#messages-modal">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                Messages
+              </a>
+            </li>
+            <li class="visible-xs-inline">
+              <a href="#">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                Profile
+              </a>
+            </li>
+            <li class="visible-xs-inline">
+              <a href="#">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                Logout
+              </a>
+            </li>
+          </ul>
+
+          <button id="tweet" class="btn btn-default pull-right hidden-xs" data-toggle="modal" data-target="#tweet-modal">
+            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+            Tweet
+          </button>
+
+          <!-- Options button dropdown -->
+          <div id="nav-options" class="btn-group pull-right hidden-xs">
+            <button type="button" class="btn btn-default dropdown-toggle thumbnail" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="imgs/jon.png">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+              <li><a href="settings.html">Setting</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+
+          <form id="search" role="search" class="hidden-sm">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search...">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- modals -->
+    <div class="modal fade" id="tweet-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Dog a new tweet</h4>
+          </div>
+          <div class="modal-body">
+            <textarea class="form-control" rows="4" placeholder="What you want to bark?" maxlength="140"></textarea>
+          </div>
+          <div class="modal-footer">
+            <span class="char-count pull-left" data-max="140">140</span>
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Tweet
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

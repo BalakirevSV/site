@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<body>
+    <div class="form-group">
+      <h1>To-Do <small>List</small></h1>
+    <form role="form">
+        <input type="text" class="form-control" placeholder="Your Task" name="task">
+    </form>
+    <button type="button" class="btn btn btn-primary">Add</button>
+        </div>
+        <div></div>
+    <ul class="list-unstyled" id="todo"></ul>
+
+
+<input type="button" value="привет" name="a" OnClick="a();">
+<input type="button" value="пока" name="b" OnClick="b();">
+<input type="button" value="погода" name="c" OnClick="c();">
+<input type="button" value="природа" name="d" OnClick="d();">
+
+<script language="JavaScript">
+function a()
+{
+    document.write('<p>привет</p>');
+}
+function b()
+{
+    document.write('<p>пока</p>');
+}
+
+function c()
+{
+    document.write('<p>погода</p>');
+}
+
+function d()
+{
+    document.write('<p>природа</p>');
+}
+</script>
+
+
+    <div class="float-left form-search" style="margin-left: 5px">
+        <button style="position: absolute; background-color: transparent; border: 0; color: transparent;z-index: -1"></button>
+        <button onclick="javascript:__doPostBack('ctl00$MainContent$GridView1','Select$0&#39);__doPostBack(&#39ctl00$MainContent$DetailsView1&#39,&#39New$0&#39);return false; " style="background-color: Transparent; border-color: Transparent; border-width: 0px; border-style: None; ">
+            <span>Добавить запись</span>
+        </button>
+    </div>
+    <div class="float-right">
+        <div class="form-search close">
+                <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="Button1_Click" placeholder="Найти..."></asp:TextBox>
+        </div>
+    </div>
+
+
+
+<!--script type="text/javascript">
+alert("Javacript подключен");
+</script-->
+
+<script>
+$(document).ready(function () {
+    $('button').click(function () {
+        $('#todo').append("<ul>" + $("input[name=task]").val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></ul>");
+    });
+    $("body").on('click', '#todo a', function () {
+        $(this).closest("ul").remove();
+    });
+});
+</script>
+
+</body>
