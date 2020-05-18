@@ -1,1 +1,1 @@
-This project is aimed to make people's life more facilitated. Easier. Free. Happy.
+This project is aimed to make people's life more facilitated, easier, free and happy.
