@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Landing Page</title>
+	<title>Planner</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 
@@ -16,15 +16,67 @@
 		<div class="container">
 			<div class="row">
 				<header class="col-md-12">
-					<h1 class="h2">Task List</h1>
-					<h2 class="h3">Input all tasks which come to your mind</h2>
-					<a class="btn btn-primary btn-lg" href="main2.html" role="button">+ (to add a task)</a>
+					<h1 class="h2">Dynamic Planner</h1>
+					<h2 class="h3">Choose an interface</h2>
+				<nav>
+					<a class="btn btn-primary btn-lg" href="main.html" role="button">Type 1</a>
+					<a class="btn btn-primary btn-lg" href="main2.html" role="button">Type 2</a>		
+					<a class="btn btn-primary btn-lg" href="main3.html" role="button">Type 3</a>
+					<a class="btn btn-primary btn-lg" href="main4.html" role="button">Type 4</a>
+				</nav>
 				</header>
 			</div>
 		</div>
 	</div>
 
-	<script src="js/jquery-1.11.3.js"></script>
+	<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+		<!--div class="input-group mb-3"-->
+  			<input type="text" class="form-control" placeholder="task" aria-label="task" aria-describedby="added">
+  		</div>
+  		<div id="added" class="col-md-2">
+  			<div class="input-group-append">
+    			<button class="btn btn-success" type="button">OK</button>
+  			</div>
+	</div>
+		<!--/div-->
+	</div>
+	</div>
+
+<section>
+<p><em>Soon</em> we'll be <span class="tooltip">planning</span> <b>together</b>.</p>
+</section>
+
+<aside>
+	<div class="col-md-3">
+		<p>Spheres</p>
+	</div>
+</aside>
+
+<div class="col-md-12" class="social">
+	<p>Meet me in <strong>Instagram</strong></p>
+  <p><i>Additionally</i>, I have a profile on
+  	<a href="https://twitter.com/serjx_91" target="_blank">TW</a>,
+  FB,
+VK,
+OK
+</p>
+<p>
+<a href="mailto:s.v.balakirev1991@gmail.com?subject=Let's%20Improve%20Together&body=Hi,%20Sergey">Email Me</a>
+</p>
+</div>
+
+
+<footer>
+	<div class="col-md-12"
+  <small> &copy; Alf Production </small>
+</div>
+</footer>
+
+<script src="add.js"></script>
+
+ 	<script src="js/jquery-1.11.3.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>

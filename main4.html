@@ -1,42 +1,46 @@
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Planner</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
 
 <body>
+
+    <div class="jumbotron" style="background-color:#CFD8DC;">
+        <div class="container">
+            <div class="row">
+                <header class="col-md-12">
+                    <h1 class="h2">Dynamic Planner</h1>
+                    <h2 class="h3">Choose an interface</h2>
+                    <a class="btn btn-primary btn-lg" href="main.html" role="button">Type 1</a>
+                    <a class="btn btn-primary btn-lg" href="main2.html" role="button">Type 2</a>
+                    <a class="btn btn-primary btn-lg" href="main3.html" role="button">Type 3</a>
+                    <a class="btn btn-primary btn-lg" href="main4.html" role="button">Type 4</a>
+                </header>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="form-group">
       <h1>To-Do <small>List</small></h1>
     <form role="form">
         <input type="text" class="form-control" placeholder="Your Task" name="task">
     </form>
-    <button type="button" class="btn btn btn-primary">Add</button>
+<input type="button" value="+" name="a" OnClick="a();">
         </div>
-        <div></div>
-    <ul class="list-unstyled" id="todo"></ul>
 
-
-<input type="button" value="привет" name="a" OnClick="a();">
-<input type="button" value="пока" name="b" OnClick="b();">
-<input type="button" value="погода" name="c" OnClick="c();">
-<input type="button" value="природа" name="d" OnClick="d();">
-
-<script language="JavaScript">
+<script>
 function a()
 {
-    document.write('<p>привет</p>');
-}
-function b()
-{
-    document.write('<p>пока</p>');
-}
-
-function c()
-{
-    document.write('<p>погода</p>');
-}
-
-function d()
-{
-    document.write('<p>природа</p>');
+    document.write('<p>OK</p>');
 }
 </script>
 
@@ -70,4 +74,11 @@ $(document).ready(function () {
 });
 </script>
 
+<script src="add.js"></script>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </body>
+
+</html>
